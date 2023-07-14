@@ -13,8 +13,13 @@ function CompA() {
   );
 }
 
-function CompB() {
-  return <h1>CompB</h1>;
+function CompB(props) {
+  return (
+    <>
+      <div>my value: {props.Myprop1}</div>
+      <div>my value: {<props.promp2 />}</div>
+    </>
+  );
 }
 
 class CompC extends React.Component {
@@ -60,7 +65,7 @@ const CompG = (params) => {
   return <div>I am arrow function</div>;
 };
 
-function CompI() {
+function CompI(props) {
   return React.createElement(
     "div",
     null,
@@ -89,10 +94,9 @@ export default function Home() {
       <button onClick={() => setValue(value - 1)}>-</button>
       <h1>Hello world!</h1>
       <CompA />
-      <CompB />
       <CompC />
       <CompD />
-      <CompI />
+      <CompB Myprop1={value} promp2={() => <div>my new comp</div>} />
     </div>
   );
 }
