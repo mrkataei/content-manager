@@ -18,9 +18,16 @@ function CompB() {
 }
 
 class CompC extends React.Component {
-  state = {
-    myValue: 10,
-  };
+  // state = {
+  //   myValue: 10,
+  // };
+
+  constructor() {
+    super();
+    this.state = {
+      myValue: 10,
+    };
+  }
 
   changeState(incrementor) {
     // console.log(incrementor);
@@ -29,16 +36,13 @@ class CompC extends React.Component {
     });
   }
   render() {
+    const myValue = this.state.myValue;
     return (
       <>
         <h1>CompC</h1>
-        current state : <h1>{this.state.myValue}</h1>
-        <button onClick={() => this.changeState(this.state.myValue + 1)}>
-          +
-        </button>
-        <button onClick={() => this.changeState(this.state.myValue - 1)}>
-          -
-        </button>
+        current state : <h1>{myValue}</h1>
+        <button onClick={() => this.changeState(myValue + 1)}>+</button>
+        <button onClick={() => this.changeState(myValue - 1)}>-</button>
       </>
     );
   }
