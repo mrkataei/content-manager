@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function CompA() {
   return (
@@ -18,8 +18,29 @@ function CompB() {
 }
 
 class CompC extends React.Component {
+  state = {
+    myValue: 10,
+  };
+
+  changeState(incrementor) {
+    // console.log(incrementor);
+    this.setState({
+      myValue: incrementor,
+    });
+  }
   render() {
-    return <h1>CompC</h1>;
+    return (
+      <>
+        <h1>CompC</h1>
+        current state : <h1>{this.state.myValue}</h1>
+        <button onClick={() => this.changeState(this.state.myValue + 1)}>
+          +
+        </button>
+        <button onClick={() => this.changeState(this.state.myValue - 1)}>
+          -
+        </button>
+      </>
+    );
   }
 }
 
@@ -44,8 +65,24 @@ function CompI() {
   );
 }
 export default function Home() {
+  const valueState = useState(10);
+  const [value, setValue] = useState(20);
+  console.log(valueState);
+  console.log(valueState[0]);
+
+  const increment = () => {
+    setValue(value + 1);
+  };
+  const decrement = () => {
+    setValue(value - 1);
+  };
   return (
     <div>
+      valueState: {valueState[0]}
+      <br></br>
+      valueState: <h1>{value}</h1>
+      <button onClick={increment}>+</button>
+      <button onClick={() => setValue(value - 1)}>-</button>
       <h1>Hello world!</h1>
       <CompA />
       <CompB />
