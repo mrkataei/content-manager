@@ -1,4 +1,4 @@
-const NewsLetter = () => {
+const NewsLetter = ({ resources }) => {
   return (
     <div className="container">
       <section className="articles">
@@ -126,32 +126,14 @@ const NewsLetter = () => {
                 </div>
               </div>
               <div className="content article-body">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Accumsan lacus vel facilisis volutpat est velit egestas.
-                  Sapien eget mi proin sed. Sit amet mattis vulputate enim.
-                </p>
-                <p>
-                  Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo
-                  vel orci porta non. Proin fermentum leo vel orci porta non
-                  pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac
-                  ut consequat semper viverra. Vestibulum lectus mauris ultrices
-                  eros.
-                </p>
-                <h3 className="has-text-centered">
-                  “Everyone should be able to do one card trick, tell two jokes,
-                  and recite three poems, in case they are ever trapped in an
-                  elevator.”
-                </h3>
-                <p>
-                  In eu mi bibendum neque egestas congue quisque egestas diam.
-                  Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt
-                  augue interdum velit euismod in. At in tellus integer feugiat
-                  scelerisque varius morbi enim nunc. Vitae suscipit tellus
-                  mauris a diam. Arcu non sodales neque sodales ut etiam sit
-                  amet.
-                </p>
+                {resources.map((resource) => {
+                  return (
+                    <section key={resource.id} className="section">
+                      <h3 className="has-text-centered">{resource.title}</h3>
+                      <p>{resource.description}</p>
+                    </section>
+                  );
+                })}
               </div>
             </div>
           </div>

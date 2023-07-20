@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <Layout>
         <ResourceHighlight />
-        <NewsLetter />
-        {JSON.stringify(resources)}
+        <NewsLetter resources={resources} />
+        {/* {JSON.stringify(resources)} */}
       </Layout>
 
       <script async type="text/javascript" src="../js/bulma.js"></script>
