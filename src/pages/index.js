@@ -1,6 +1,6 @@
-import Navbar from "../../components/Navbar";
-import ResourceHighlight from "../../components/ResourceHighlight";
-import NewsLetter from "../../components/NewsLetter";
+import Navbar from "components/Navbar";
+import ResourceHighlight from "components/ResourceHighlight";
+import NewsLetter from "components/NewsLetter";
 
 export default function Home() {
   return (
