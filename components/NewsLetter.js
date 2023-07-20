@@ -1,22 +1,22 @@
 const NewsLetter = () => {
   return (
-    <div class="container">
-      <section class="articles">
-        <div class="column is-8 is-offset-2">
-          <div class="card article">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-content has-text-centered">
-                  <p class="title article-title">
+    <div className="container">
+      <section className="articles">
+        <div className="column is-8 is-offset-2">
+          <div className="card article">
+            <div className="card-content">
+              <div className="media">
+                <div className="media-content has-text-centered">
+                  <p className="title article-title">
                     Introducing a new feature for paid subscribers
                   </p>
-                  <div class="tags has-addons level-item">
-                    <span class="tag is-rounded is-info">@skeetskeet</span>
-                    <span class="tag is-rounded">May 10, 202X</span>
+                  <div className="tags has-addons level-item">
+                    <span className="tag is-rounded is-info">@skeetskeet</span>
+                    <span className="tag is-rounded">May 10, 202X</span>
                   </div>
                 </div>
               </div>
-              <div class="content article-body">
+              <div className="content article-body">
                 <p>
                   Non arcu risus quis varius quam quisque. Dictum varius duis at
                   consectetur lorem. Posuere sollicitudin aliquam ultrices
@@ -30,39 +30,41 @@ const NewsLetter = () => {
                   elit ullamcorper dignissim cras tincidunt lobortis feugiat
                   vivamus.
                 </p>
-                <h3 class="has-text-centered">
+                <h3 className="has-text-centered">
                   How to properly center tags in bulma?
                 </h3>
                 <p>
                   {" "}
-                  Proper centering of tags in bulma is done with class: Voluptat
-                  ut farmacium tellus in metus vulputate. Feugiat in fermentum
-                  posuere urna nec. Pharetra convallis posuere morbi leo urna
-                  molestie. Accumsan lacus vel facilisis volutpat est velit
-                  egestas. Fermentum leo vel orci porta. Faucibus interdum
+                  Proper centering of tags in bulma is done with className:
+                  Voluptat ut farmacium tellus in metus vulputate. Feugiat in
+                  fermentum posuere urna nec. Pharetra convallis posuere morbi
+                  leo urna molestie. Accumsan lacus vel facilisis volutpat est
+                  velit egestas. Fermentum leo vel orci porta. Faucibus interdum
                   posuere lorem ipsum.
                 </p>
               </div>
             </div>
           </div>
-          <div class="card article">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-center">
+          <div className="card article">
+            <div className="card-content">
+              <div className="media">
+                <div className="media-center">
                   <img
                     src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png"
-                    class="author-image"
+                    className="author-image"
                     alt="Placeholder image"
                   />
                 </div>
-                <div class="media-content has-text-centered">
-                  <p class="title article-title">Sapien eget mi proin sed 🔱</p>
-                  <p class="subtitle is-6 article-subtitle">
+                <div className="media-content has-text-centered">
+                  <p className="title article-title">
+                    Sapien eget mi proin sed 🔱
+                  </p>
+                  <p className="subtitle is-6 article-subtitle">
                     <a href="#">@daria</a> on February 17, 202X
                   </p>
                 </div>
               </div>
-              <div class="content article-body">
+              <div className="content article-body">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -76,7 +78,7 @@ const NewsLetter = () => {
                   ut consequat semper viverra. Vestibulum lectus mauris ultrices
                   eros.
                 </p>
-                <h3 class="has-text-centered">
+                <h3 className="has-text-centered">
                   Lectus vestibulum mattis ullamcorper velit sed ullamcorper
                   morbi. Cras tincidunt lobortis feugiat vivamus.
                 </h3>
@@ -91,38 +93,39 @@ const NewsLetter = () => {
               </div>
             </div>
           </div>
-          <section class="hero is-info is-bold is-small promo-block">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title">
-                  <i class="fa fa-bell-o"></i> Nemo enim ipsam voluptatem quia.
+          <section className="hero is-info is-bold is-small promo-block">
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title">
+                  <i className="fa fa-bell-o"></i> Nemo enim ipsam voluptatem
+                  quia.
                 </h1>
-                <span class="tag is-black is-medium is-rounded">
+                <span className="tag is-black is-medium is-rounded">
                   Natus error sit voluptatem
                 </span>
               </div>
             </div>
           </section>
-          <div class="card article">
-            <div class="card-content">
-              <div class="media">
-                <div class="media-center">
+          <div className="card article">
+            <div className="card-content">
+              <div className="media">
+                <div className="media-center">
                   <img
                     src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png"
-                    class="author-image"
+                    className="author-image"
                     alt="Placeholder image"
                   />
                 </div>
-                <div class="media-content has-text-centered">
-                  <p class="title article-title">
+                <div className="media-content has-text-centered">
+                  <p className="title article-title">
                     Cras tincidunt lobortis feugiat vivamus.
                   </p>
-                  <p class="subtitle is-6 article-subtitle">
+                  <p className="subtitle is-6 article-subtitle">
                     <a href="#">@angela</a> on June 7, 202X
                   </p>
                 </div>
               </div>
-              <div class="content article-body">
+              <div className="content article-body">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -136,7 +139,7 @@ const NewsLetter = () => {
                   ut consequat semper viverra. Vestibulum lectus mauris ultrices
                   eros.
                 </p>
-                <h3 class="has-text-centered">
+                <h3 className="has-text-centered">
                   “Everyone should be able to do one card trick, tell two jokes,
                   and recite three poems, in case they are ever trapped in an
                   elevator.”

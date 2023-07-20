@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 
 function CompA() {
   return (
-    <div class="float-container">
-      <div class="float-child">
-        <div class="green">Float Column 1</div>
+    <div className="float-container">
+      <div className="float-child">
+        <div className="green">Float Column 1</div>
       </div>
-      <div class="float-child">
-        <div class="blue">Float Column 2</div>
+      <div className="float-child">
+        <div className="blue">Float Column 2</div>
       </div>
     </div>
   );
@@ -22,7 +22,7 @@ function CompB(props) {
   );
 }
 
-class CompC extends React.Component {
+className CompC extends React.Component {
   // state = {
   //   myValue: 10,
   // };

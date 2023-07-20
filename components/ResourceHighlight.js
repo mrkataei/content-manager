@@ -1,9 +1,9 @@
 const ResourceHighlight = () => {
   return (
-    <section class="hero is-info is-medium is-bold">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
+    <section className="hero is-info is-medium is-bold">
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <h1 className="title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
             sed eiusmod tempor incididunt ut labore et dolore magna aliqua
           </h1>
