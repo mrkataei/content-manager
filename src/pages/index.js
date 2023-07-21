@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Layout>
         <ResourceHighlight />
-        <NewsLetter resources={resources} />
+        <NewsLetter resources={resources.slice(0, 2)} />
         {/* {JSON.stringify(resources)} */}
       </Layout>
 
