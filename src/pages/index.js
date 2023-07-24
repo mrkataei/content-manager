@@ -27,12 +27,27 @@ export default function Home({ resources }) {
 //   }
 // }
 
+// build time
+// we cant api call in client side from another domain cros problem
 export async function getStaticProps() {
-  const resData = await fetch("http://localhost:3000/api/resources");
+  const resData = await fetch("http://localhost:3001/api/resources");
   const data = await resData.json();
+  console.log("nool");
   return {
     props: {
       resources: data,
     },
   };
 }
+
+// when required called every time visit page
+// export async function getServerSideProps() {
+//   const resData = await fetch("http://localhost:3000/api/resources");
+//   const data = await resData.json();
+//   console.log("hell")
+//   return {
+//     props: {
+//       resources: data,
+//     },
+//   };
+// }
