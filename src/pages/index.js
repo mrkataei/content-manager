@@ -1,10 +1,14 @@
 import Layout from "components/Layout";
 import ResourceHighlight from "components/ResourceHighlight";
 import NewsLetter from "components/NewsLetter";
+import { useEffect } from "react";
 
 // import { resources } from "api/data";
 
 export default function Home({ resources }) {
+  // useEffect(() => {
+  //   fetch("http://localhost:3000/api/resources");
+  // }, []);
   return (
     <>
       <Layout>
