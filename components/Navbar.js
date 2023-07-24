@@ -5,9 +5,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
-          <a className="navbar-item" href="../">
-            <img src="../images/bulma.png" alt="Logo" />
-          </a>
+          <Link className="navbar-item" href="../">
+            Content Manager
+          </Link>
           <span className="navbar-burger burger" data-target="navbarMenu">
             <span></span>
             <span></span>
@@ -16,7 +16,9 @@ const Navbar = () => {
         </div>
         <div id="navbarMenu" className="navbar-menu">
           <div className="navbar-end">
-            <a className="navbar-item is-active">Home</a>
+            <Link href="/" className="navbar-item is-active">
+              Home
+            </Link>
             <Link href="/resources/new" className="navbar-item">
               New
             </Link>
